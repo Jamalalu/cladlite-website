@@ -22,7 +22,7 @@ const revealTargets = document.querySelectorAll(
   '.brand-strip__copy, .cert-grid li, .innovation__title, .innovation__copy,' +
   ' .features__head, .feat, .bullets li,' +
   ' .visualizer__copy, .visualizer__shot-frame,' +
-  ' .series__head, .series-card, .finish,'
+  ' .series__head, .series-card,'
   + ' .finishes__head, .cat,' +
   ' .project,' +
   ' .technical__head, .tbl,' +
