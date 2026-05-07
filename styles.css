@@ -505,6 +505,52 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
 }
 .chip:hover figcaption { color: var(--white); }
 
+/* RAL category — fan deck + paragraph hero, then swatch grid */
+.cat__ral {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.cat__ral-hero {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 36px;
+  align-items: center;
+  padding: 4px 0 12px;
+}
+.cat__ral-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.cat__ral-hero p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.78);
+  max-width: 560px;
+  line-height: 1.55;
+}
+.cat__ral-hero strong {
+  color: var(--white);
+  font-weight: 600;
+}
+.chip--swatch { cursor: default; }
+.chip--swatch span {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.chip--swatch:hover span {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.16);
+}
+@media (max-width: 700px) {
+  .cat__ral-hero { grid-template-columns: 1fr; gap: 18px; }
+  .cat__ral-hero img { width: 200px; margin: 0 auto; }
+}
+
 .finishes__note {
   margin-top: 56px;
   font-size: 12.5px;
