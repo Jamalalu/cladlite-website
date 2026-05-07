@@ -395,7 +395,12 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
 }
 .series-card__bar--origin { background: var(--red); }
 .series-card__bar--split  {
-  background: linear-gradient(90deg, var(--red) 0% 50%, var(--slate) 50% 100%);
+  background: linear-gradient(
+    90deg,
+    var(--red) 0 45.8%,
+    transparent 45.8% 54.2%,
+    var(--slate) 54.2% 100%
+  );
 }
 .series-card h3 { font-size: 28px; margin-bottom: 4px; }
 .series-card__sub { font-size: 13px; font-weight: 500; color: var(--ink-muted); letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 14px; }
