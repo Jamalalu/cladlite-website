@@ -24,6 +24,7 @@ const revealTargets = document.querySelectorAll(
   ' .visualizer__copy, .visualizer__shot-frame,' +
   ' .series__head, .series-card,'
   + ' .finishes__head, .cat,' +
+  ' .fire__head, .fire__pillars li, .fire__table, .fire__footnote,' +
   ' .project,' +
   ' .technical__head, .tbl,' +
   ' .refurb__inner > *,' +
