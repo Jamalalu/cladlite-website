@@ -468,6 +468,9 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
 .dot--sig-inf {
   background: var(--slate);
 }
+.dot--split {
+  background: linear-gradient(90deg, var(--red) 0% 50%, var(--slate) 50% 100%);
+}
 .cat__head h3 .dot {
   width: 9px; height: 9px;
   margin-left: 6px;
