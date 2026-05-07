@@ -445,6 +445,39 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
   font-size: 17px;
   max-width: 620px;
 }
+/* Series-availability legend + dot indicators */
+.finishes__legend {
+  list-style: none; padding: 0;
+  margin: -32px 0 56px;
+  display: flex; flex-wrap: wrap;
+  gap: 22px 32px;
+  font-size: 13px; letter-spacing: 0.02em;
+  color: rgba(255,255,255,0.78);
+}
+.finishes__legend li {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  vertical-align: 0;
+}
+.dot--origin { background: var(--red); }
+.dot--sig-inf {
+  background: linear-gradient(90deg, var(--red) 0% 50%, #5c8fb0 50% 100%);
+}
+.cat__head h3 .dot {
+  width: 9px; height: 9px;
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+.chip figcaption .dot {
+  width: 6px; height: 6px;
+  margin-right: 6px;
+}
+
 .cat { margin-bottom: 64px; }
 .cat:last-of-type { margin-bottom: 0; }
 .cat__head {
@@ -534,7 +567,7 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
   font-weight: 600;
 }
 .chip--swatch { cursor: default; }
-.chip--swatch span {
+.chip__color {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -542,7 +575,7 @@ h3 { font-size: clamp(20px, 1.6vw, 26px); font-weight: 600; line-height: 1.3; le
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-.chip--swatch:hover span {
+.chip--swatch:hover .chip__color {
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.16);
 }
