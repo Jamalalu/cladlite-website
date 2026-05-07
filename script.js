@@ -20,7 +20,7 @@ links?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => link
 // ─── Reveal-on-scroll ───────────────────────────────────────
 const revealTargets = document.querySelectorAll(
   '.brand-strip__copy, .cert-grid li, .innovation__title, .innovation__copy,' +
-  ' .features__head, .feat, .bullets li,' +
+  ' .features__head, .feat, .caps li,' +
   ' .visualizer__copy, .visualizer__shot-frame,' +
   ' .series__head, .series-card,'
   + ' .finishes__head, .cat,' +
