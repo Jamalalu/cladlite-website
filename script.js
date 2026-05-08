@@ -28,7 +28,7 @@ const revealTargets = document.querySelectorAll(
   ' .project,' +
   ' .technical__head, .tbl,' +
   ' .refurb__inner > *,' +
-  ' .sustain__grid > *,' +
+  ' .sustain__grid > *, .sustain__pillars li,' +
   ' .install__head, .install__pillars li, .install__diagram, .install__key, .install__supplies li,' +
   ' .final__hero, .final__contact'
 );
